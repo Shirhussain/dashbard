@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Danishyar list</title>
+</head>
+<body>
+  	<h1>Here is your note</h1>
+  	<ul>
+  		{% for obj in obj_list %}
+  		<li>
+  			{{obj}} <small><a href="{{obj.get_delete_url}}">delete</a></small><br>
+  			<small><a href="{{obj.get_update_url}}">update</a></small>
+  		</li>
+  		{% endfor %}
+  	</ul>
+</body>
+</html>
